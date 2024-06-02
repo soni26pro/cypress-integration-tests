@@ -9,6 +9,9 @@
   "author": "yasar",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.10.0"
+    "cypress": "^13.10.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mocha": "^10.4.0",
+    "mochawesome-merge": "^4.3.0"
   }
 }
