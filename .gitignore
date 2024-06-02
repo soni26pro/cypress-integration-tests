@@ -1,0 +1,18 @@
+# Logs
+*.log
+
+# Test output
+cypress/videos/
+cypress/screenshots/
+
+# Configuration file
+cypress.env.json
+
+# Local reports
+mochawesome-report/
+
+# Dependencies
+node_modules/
+
+# Cypress generated files
+cypress.json
