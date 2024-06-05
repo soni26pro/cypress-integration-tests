@@ -20,12 +20,12 @@ Before you begin, ensure you have the following installed on your machine:
 
 1. Clone this repository:
     ```sh
-    git clone https://github.com/soni26pro/cypress-rest-api
+    git clone https://github.com/soni26pro/cypress-integration-tests.git
     ```
 
 2. Navigate to the project directory:
     ```sh
-    cd cypress-rest-api
+    cd cypress-integration-tests
     ```
 
 3. Install the necessary dependencies:
