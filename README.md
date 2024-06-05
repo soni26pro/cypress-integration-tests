@@ -21,12 +21,12 @@ Before you begin, ensure you have the following installed on your machine:
 
 1. Clone this repository:
     ```sh
-    git clone https://github.com/yourusername/restful-booker-cypress.git
+    git clone https://github.com/soni26pro/cypress-rest-api
     ```
 
 2. Navigate to the project directory:
     ```sh
-    cd restful-booker-cypress
+    cd cypress-rest-api
     ```
 
 3. Install the necessary dependencies:
@@ -36,30 +36,11 @@ Before you begin, ensure you have the following installed on your machine:
 
 ## Project Structure
 
-The project follows the Page Object Model (POM) design pattern for better organization and maintainability of the test cases. The main test file is located in the `cypress/integration` directory.
+The project follows the Page Object Model (POM) design pattern for better organization and maintainability of the test cases. The main test file is located in the `cypress/e2e` directory.
 
 ## Test Cases
 
-The following test cases are included in the `Rest_full_bookers_project.cy.js` file:
-
-1. **Create Token**: Generates a token required for authorization.
-2. **GET Method**: Retrieves all booking details.
-3. **GET by ID**: Retrieves details of a specific booking by ID.
-4. **Create Booking (POST Method)**: Creates a new booking.
-5. **GET Created Booking**: Retrieves details of the newly created booking.
-6. **Update Booking (PUT Method)**: Updates the entire booking details.
-7. **Partial Update (PATCH Method)**: Updates specific fields in the booking.
-8. **Delete Booking (DELETE Method)**: Deletes the created booking.
-9. **Verify Deletion**: Confirms the booking has been deleted.
-
-## Additional Test Cases
-
-1. **Create Token with Invalid Credentials**: Verifies the server's response to invalid login credentials.
-2. **Create Booking with Invalid Data**: Tests the server's response to creating a booking with invalid data.
-3. **Update Booking with Invalid Token**: Checks the server's response to an update request with an invalid token.
-4. **Partially Update Booking with Invalid Data**: Tests partial updates with invalid data.
-5. **Delete Booking with Invalid Token**: Verifies the server's response to a delete request with an invalid token.
-6. **Verify Error for Non-Existent Booking ID**: Ensures the server returns a 404 error for non-existent booking IDs.
+Test cases are included for Rest API in the `api` folder and UI in the `web`
 
 ## Running the Tests
 
@@ -69,9 +50,57 @@ To run the tests, use the following command:
 npx cypress open
 ```
 
-This will open the Cypress Test Runner. Select the test file Rest_full_bookers_project.cy.js to run the tests.
+This will open the Cypress Test Runner. Select the respective test file  run the tests.
 
 Conclusion
 This project demonstrates a comprehensive approach to testing RESTful APIs using Cypress. By covering CRUD operations and verifying the correctness of each action, it ensures the robustness and reliability of the API.
+
+You can run Cypress tests from the command line using different browsers and in headless mode.
+
+#### Running Tests in Chrome
+
+To run tests in Chrome:
+
+```bash
+npx cypress run --browser chrome
+```
+
+### Running Tests in Firefox
+To run tests in Firefox:
+
+```bash
+npx cypress run --browser firefox
+```
+
+### Running Tests in Edge
+To run tests in Edge:
+
+```bash
+npx cypress run --browser edge
+```
+
+### Running Tests in Headless Mode
+Headless mode allows you to run the tests without opening a browser window.
+
+#### Running Tests in Headless Chrome
+To run tests in headless Chrome:
+
+```bash
+npx cypress run --browser chrome --headless
+```
+
+### Running Tests in Headless Firefox
+To run tests in headless Firefox:
+
+```bash
+npx cypress run --browser firefox --headless
+```
+
+### Running Specific Tests
+You can specify a particular test file to run by providing the path to the test file:
+
+```bash
+npx cypress run --spec "cypress/integration/web/my_test_spec.js"
+```
 
 Feel free to contribute to this project by submitting issues or pull requests. For any questions, please contact soni.sujit.qa@gmail.com.
