@@ -99,7 +99,7 @@ npx cypress run --browser firefox --headless
 You can specify a particular test file to run by providing the path to the test file:
 
 ```bash
-npx cypress run --spec "cypress/integration/web/my_test_spec.js"
+npx cypress run --spec "cypress/e2e/web/my_test_spec.js"
 ```
 
 Feel free to contribute to this project by submitting issues or pull requests. For any questions, please contact soni.sujit.qa@gmail.com.
