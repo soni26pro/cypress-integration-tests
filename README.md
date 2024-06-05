@@ -7,7 +7,6 @@ This project demonstrates how to perform automated testing of the RESTful Booker
 - [Installation](#installation)
 - [Project Structure](#project-structure)
 - [Test Cases](#test-cases)
-- [Additional Test Cases](#additional-test-cases)
 - [Running the Tests](#running-the-tests)
 - [Conclusion](#conclusion)
 
